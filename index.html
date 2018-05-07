@@ -15,7 +15,7 @@
     <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
 
     <label for="base">Base Color</label>
-    <input id="base" type="color" name="base" value="#ffc600">
+    <input id="base" type="color" name="base" value="#7ccbf1">
   </div>
 
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
@@ -23,11 +23,17 @@
   <style>
 
   :root {
-    --base:#ffc600;
+    --base:#7ccbf1;
     --spacing: 10px;
     --blur: 10px
   }
 
+  img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+
+  }
     /*
       misc styles, nothing to do with CSS variables
     */
